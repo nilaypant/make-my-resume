@@ -11,3 +11,15 @@ GitHub (remote backup + history)
 Auto LaTeX build (PDF)
    ↓
 Optional: GitHub Pages (web preview)
+
+## Quick Start
+
+```bash
+brew install tectonic watchexec
+make build
+make watch
+```
+
+Local output goes to `build/resume.pdf` at repo root.
+
+CI/CD workflow is configured at `.github/workflows/resume-ci.yml` and builds `my-modular-resume/resume.tex` automatically on push/PR.
